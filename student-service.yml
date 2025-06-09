@@ -1,0 +1,17 @@
+# Student Service Configuration
+server:
+  port: 8081
+
+spring:
+  application:
+    name: student-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/studentdb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
